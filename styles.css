@@ -9,7 +9,7 @@ body {
   font-style: normal;
 
   background: #527072;
-  padding: 10px 10px 100px;
+  padding: 10px 10px 40px;
 }
 img {
   display: block;
@@ -32,6 +32,18 @@ button:focus {
 header {
   padding-bottom: 40px;
 }
+
+.header-social-link > svg {
+  fill: #8f9b97;
+}
+.header-social-links-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-social-list-item:not(:first-child) {
+  margin-left: 10px;
+}
+
 .navigation-list {
   font-weight: 300;
   font-size: 18px;
@@ -68,8 +80,8 @@ header {
 .philosophy-card {
   margin: 0 auto;
   padding: 10px;
-  width: 320px;
-  max-height: 188px;
+  max-width: 400px;
+  max-height: 200px;
   border-radius: 10px;
   background: #527072;
   box-shadow: 18px 18px 30px #476567, -18px -18px 30px rgba(255, 255, 255, 0.32);
@@ -98,7 +110,7 @@ header {
 .projects-list-item {
   padding: 20px;
   margin: 0 auto;
-  width: 380px;
+  max-width: 400px;
   max-height: 300px;
   background: #527072;
   border: 1px solid #000000;
