@@ -109,23 +109,48 @@ header {
 }
 
 /* ---------------------------------for all sections */
-.section {
+.philosophy-section,
+.services-section,
+.projects-section,
+.blog-section {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-
+  position: relative;
+}
+.people-section {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
 }
 @media screen and (min-width: 480px) {
-  .section {
+  .philosophy-section,
+  .services-section,
+  .projects-section,
+  .blog-section {
+    width: 480px;
+  }
+  .people-section {
+    margin-top: 120px;
     width: 480px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .philosophy-section,
+  .services-section,
+  .projects-section {
     width: 1120px;
     margin-top: 60px;
+  }
+  .people-section {
+    margin-top: 140px;
+    width: 1120px;
+  }
+  .blog-section {
+    margin-top: 200px;
+    width: 1120px;
   }
 }
 
@@ -170,52 +195,28 @@ header {
   background: #527072;
   box-shadow: 18px 18px 30px #476567, -18px -18px 30px rgba(255, 255, 255, 0.32);
 }
-.icon-tilda-mobile {
+.tilda-icon {
   position: absolute;
+  fill: rgba(255, 255, 255, 0.8);
+
   width: 60px;
   height: 20px;
   bottom: -34px;
   left: -10px;
   display: inline-block;
 }
-.icon-tilda-first {
-  fill: white;
-  width: 60px;
-  height: 20px;
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-}
-.icon-tilda-second {
-  fill: #375557;
-  width: 60px;
-  height: 20px;
-  position: absolute;
-  z-index: -1;
-  bottom: 2px;
-  right: 2px;
-}
-.icon-tilda-third {
-  fill: #f0f5f5;
-  width: 60px;
-  height: 20px;
-  position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 2px;
-}
+
 /* ---------------------------------people */
-.icon-and {
-  width: 40px;
-  height: 60px;
-  /* display: block; */
+
+.and-icon {
+  width: 80px;
+  height: 100px;
   position: absolute;
-  top: 14px;
+  fill: rgb(255, 255, 255);
+  fill-opacity: 0.6;
+  top: -4%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  /* fill-opacity: 0.4; */
+  transform: translate(-50%, -50%);
 }
 
 .people-name {
@@ -262,6 +263,29 @@ header {
 }
 
 /* ---------------------------------projects */
+@media screen and (max-width: 1199px) {
+  .at-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .at-icon {
+    bottom: -130px;
+    left: -30px;
+    /* fill: rgba(44, 74, 82, 0.5); */
+    fill: rgba(255, 255, 255, 0.08);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .at-icon {
+    bottom: -130px;
+    left: -100px;
+  }
+}
 .projects-list-item {
   padding: 20px;
   margin: 0 auto;
