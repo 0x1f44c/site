@@ -4,12 +4,16 @@
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
 
   background: #527072;
   padding: 10px 10px 40px;
+  height: 100%;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -115,10 +119,17 @@ button:focus {
   /* top: 20px;
   left: 30px; */
 }
-header {
-  padding-bottom: 40px;
+@media screen and (max-width: 1199px) {
+  header {
+    padding-bottom: 40px;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  header {
+    height: 100%;
+  }
+}
 .header-social-link > svg {
   fill: #8f9b97;
 }
@@ -128,6 +139,14 @@ header {
     height: 40px;
   }
 }
+
+/* .header-social-links-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-social-list-item:not(:first-child) {
+  margin-left: 10px;
+} */
 @media screen and (max-width: 1199px) {
   .header-social-links-list {
     display: flex;
@@ -145,7 +164,7 @@ header {
     align-items: flex-end;
   }
   .header-social-list-item:not(:first-child) {
-    margin-top: 30px;
+    margin-top: 1em;
   }
 }
 
@@ -367,6 +386,8 @@ header {
   box-sizing: border-box;
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
+
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1200px) {
@@ -406,6 +427,8 @@ header {
   width: 100%;
 
   color: #000000;
+
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .projects-list-item-text {
