@@ -31,10 +31,17 @@ body {
   font-style: normal;
 
   background: #527072;
-  padding: 10px 10px;
-  padding-bottom: 60px;
+
+  /* padding: 10px 10px;
+  padding-bottom: 60px; */
 }
-@media screen and (min-width: 480px) {
+
+/* @media screen and (min-width: 1200px) {
+  body {
+    position: relative;
+  }
+} */
+/* @media screen and (min-width: 480px) {
   body {
     width: 480px;
     margin: 0 auto;
@@ -51,8 +58,38 @@ body {
     min-width: 1200px;
     height: 100%;
   }
+} */
+@media screen and (max-width: 1199px) {
+  .wrapper-for-all-content {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+  }
 }
 
+@media screen and (min-width: 480px) {
+  .wrapper-for-all-content {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 769px and max-width: 1199px) {
+  .wrapper-for-all-content {
+    width: 768px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper-for-all-content {
+    min-width: 1200px;
+    height: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* padding-bottom: 60px; */
+  }
+}
 .spaser {
   flex-shrink: 0;
   flex-grow: 1;

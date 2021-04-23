@@ -1,11 +1,25 @@
-.project-decoration-wrapper{
-  position:absolute;
-  right
-  /* display: inline-block; */
-  background: rgb(199, 3, 3);
-  height: 100%;
-  width: 200px;
+@media screen and (min-width: 1200px) {
+  .project-decoration-wrapper {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    z-index: -2;
+    background-color: rgba(244, 235, 220, 0.27);
+    background-image: url(./images/large.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .header-social-link > svg {
+    fill: rgb(222, 222, 222);
+  }
+}
+
 .header-container-project {
   display: flex;
   flex-direction: row;
@@ -62,19 +76,19 @@
 /* ///////////////////section-project */
 
 .project-wrapper {
-
   box-sizing: border-box;
   margin: 0 auto;
   width: 380px;
   max-height: 900px;
   padding: 20px 30px 40px;
+  z-index: 2;
 
   background: linear-gradient(
     237.97deg,
     rgba(255, 255, 255, 0.2) 1.16%,
     rgba(255, 255, 255, 0) 99.16%
   );
-  -webkit-backdrop-filter: blur(24px);
+
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border: linear-gradient(
@@ -82,6 +96,8 @@
     rgba(255, 255, 255, 0.6) -20%,
     rgba(255, 255, 255, 0.3) 79.79%
   );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 @media screen and (min-width: 679px) {
@@ -91,11 +107,11 @@
 }
 @media screen and (min-width: 1200px) {
   .project-wrapper {
-    position: absolute; */
-     top: 50%;
+    /* position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 300px;
+    top: 300px; */
     width: 1000px;
   }
 }
