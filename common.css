@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  font-style: normal;
+}
+
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+
+  background: #527072;
+  padding: 10px 10px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) {
+  body {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    width: 768px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+    height: 100%;
+  }
+}
+
+.spaser {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
